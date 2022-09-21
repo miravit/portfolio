@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+
 body {
   margin: 0;
 }
@@ -19,6 +21,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+li {
+  display: inline;
+  padding: 40px;
+}
 
 main {
   display: flex;
@@ -27,12 +33,53 @@ main {
   height: 70vh;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+}
+
+.stortnamn {
+  font-size: 40px;
+  display: block;
+  width: 100%;
+  margin-left: 40%;
+  font-size: 40px;
+}
+
+@keyframes namnet {
+  from {
+    color: #6fa97c;
+  }
+  to {
+    color: #c1bac4;
+  }
+}
+
+.developer,
+.stortnamn,
+.frontend {
+  font-family: "Koulen", cursive;
+  color: #c1bac4;
+  animation: namnet 10s;
+}
+.developer {
+  display: block;
+  margin-left: 30px;
+}
+
+.content-container {
+  display: flex;
+  height: 50%;
+  width: 50%;
 }
 .photo-container {
-  background-color: white;
-  height: 50px;
-  width: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  background-image: url(../photos/cv_bild\ copy.png);
+  background-size: cover;
+  border-radius: 50%;
 }
 
 .purplesection {
@@ -42,6 +89,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  /*desktop*/
   .mainsection {
     display: flex;
     flex-direction: row;
@@ -57,7 +105,9 @@ main {
     height: 100vh;
     order: 2;
   }
-
+  .stortnamn {
+    width: 100%;
+  }
   .purplesection {
     background-color: #966fa9;
     order: 1;
