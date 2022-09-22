@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
 }
@@ -57,23 +59,28 @@ main {
 
 .developer,
 .stortnamn,
-.frontend {
+.frontend,
+h2 {
   font-family: "Koulen", cursive;
   color: #c1bac4;
   animation: namn_animation 5s;
 }
+.frontend {
+  font-size: 40px;
+  margin-bottom: -7%;
+}
 .developer {
   display: block;
   margin-left: 30px;
+  font-size: 40px;
+  margin-top: 0;
 }
 
 .content-container {
   display: flex;
-  height: 50%;
   width: 50%;
 }
 .photo-container {
-  height: 100%;
   width: 100%;
 }
 
@@ -81,16 +88,21 @@ main {
   width: 100%;
   border-radius: 50%;
 }
+h2 {
+  text-align: center;
+}
 .about_box {
   background-color: black;
   color: white;
   margin: 5%;
 }
+.projekt {
+  height: 600px; /*tillfällig utfyllnad, ska bort*/
+}
 
 .purplesection {
   background-color: #966fa9;
   width: 100%;
-  height: 20vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -107,18 +119,28 @@ main {
   main {
     background-color: #454745;
     width: 80%;
-    height: 100vh;
     order: 2;
   }
 
-  .purplesection {
-    background-color: #966fa9;
-    order: 1;
-    width: 20%;
-    height: 100vh;
-  }
   .stortnamn {
     margin-left: 0;
+    font-size: 100px;
+  }
+
+  .frontend {
+    margin-left: -100px;
+  }
+  .developer {
+    margin-left: 70px;
+    margin-top: -70px;
+  }
+  .frontend,
+  .developer {
+    font-size: 80px;
+  }
+
+  .photo {
+    width: 50%;
   }
   .aboutcontainer {
     display: flex;
@@ -128,5 +150,15 @@ main {
   }
   .about_box {
     width: 60%;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  .purplesection {
+    background-color: #966fa9;
+    order: 1;
+    width: 20%;
   }
 }
