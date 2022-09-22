@@ -107,24 +107,17 @@ main {
   main {
     background-color: #454745;
     width: 80%;
-    height: 100vh;
-    order: 2;
   }
 
   .purplesection {
     background-color: #966fa9;
-    order: 1;
+
     width: 20%;
-    height: 100vh;
   }
   .stortnamn {
     margin-left: 0;
   }
-  .aboutcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  
   }
   .about_box {
     width: 60%;
