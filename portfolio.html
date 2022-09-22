@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="CSS_portfolio/portfolio.css" />
     <title>MIRAS PORTFOLIO</title>
   </head>
@@ -14,7 +24,7 @@
           <ul>
             <li><a class="menulinks" href="#about">ABOUT</a></li>
             <li><a class="menulinks" href="#portfolio">PORTFOLIO</a></li>
-            <li></li><a class="menulinks" href="#contact">CONTACT</a></li>
+            <li><a class="menulinks" href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </header>
@@ -69,12 +79,28 @@
         <h2 id="portfolio">PORTFOLIO</h2>
         <article class="projekt">här ska jag ha mina projekt</article>
         <h2 id="contact">KONTAKT</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-          repellendus. Quia, atque dolor, nemo excepturi ad nihil quas culpa
-          exercitationem debitis eligendi cumque, placeat quaerat! Ullam amet
-          enim magni sit.
-        </p>
+        <article class="form_container">
+          <div class="form">
+            <form>
+              <label>Name:</label>
+              <input type="text" />
+
+              <label>E-mail:</label>
+              <input type="email" />
+
+              <label>Phone number:</label>
+              <input
+                type="tel"
+                placeholder="XXX-XXXXXXX"
+                pattern="[0-9]{3}-[0-9]{7}"
+              />
+              <label>Message:</label>
+              <input type="text" class="textbox" />
+
+              <button type="submit" class="form_button">Send</button>
+            </form>
+          </div>
+        </article>
       </main>
       <footer class="purplesection">.</footer>
     </section>
