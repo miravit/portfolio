@@ -14,18 +14,24 @@ body {
   height: 10vh;
   flex-direction: row;
 }
-.menulinks {
+
+li {
   list-style-type: none;
+  padding-top: 6px;
+}
+ul {
+  padding: 4px;
+  margin-top: -5px;
+}
+.menulinks {
+  font-size: 14px;
+  text-decoration: none;
+  color: #454745;
 }
 
 .navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-li {
-  display: inline;
-  padding: 40px;
+  padding: 0;
 }
 
 main {
@@ -39,13 +45,10 @@ main {
 }
 
 .stortnamn {
-  font-size: 70px;
-  display: block;
-  width: 60%;
-  margin-left: 0%;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  font-size: 60px;
+  display: inline;
+  width: 76%;
+  margin-left: 24%;
 }
 
 .frontend {
@@ -61,6 +64,21 @@ h2 {
   font-family: "Koulen", cursive;
   color: #c1bac4;
   animation: namn_animation 5s;
+}
+.stortnamn:hover,
+.frontend:hover,
+.developer:hover,
+h2:hover {
+  color: #488555;
+}
+.about_box > p {
+  margin: 3%;
+  padding: 3%;
+}
+#githubicon,
+#mail_icon {
+  color: black;
+  margin-left: 10px;
 }
 
 .form_container {
@@ -94,6 +112,7 @@ form {
 .content-container {
   display: flex;
   width: 50%;
+  flex-direction: column;
 }
 .photo-container {
   width: 100%;
@@ -103,6 +122,11 @@ form {
   width: 100%;
   border-radius: 50%;
 }
+
+main > p {
+  padding: 5%;
+}
+
 h2 {
   text-align: center;
 }
@@ -118,13 +142,26 @@ h2 {
   height: 80px;
   margin-bottom: 10px;
 }
+label {
+  color: #c1bac4;
+}
 .form_button {
   width: 60px;
+  margin: 10px;
+}
+.btn {
+  background-color: #488555;
+  width: 50%;
+  height: 30px;
+  border-radius: 20px;
+  z-index: -10px;
 }
 
 .purplesection {
+  display: flex;
   background-color: #966fa9;
   width: 100%;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -137,6 +174,16 @@ h2 {
   .header {
     background-color: #c1bac4;
     width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    display: inline;
+    padding: 40px;
   }
   main {
     background-color: #454745;
@@ -190,5 +237,8 @@ h2 {
     background-color: #966fa9;
     order: 1;
     width: 20%;
+  }
+  #phone_footer {
+    color: #966fa9;
   }
 }
