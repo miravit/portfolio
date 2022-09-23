@@ -14,7 +14,6 @@ body {
   height: 10vh;
   flex-direction: row;
 }
-
 li {
   list-style-type: none;
   padding-top: 6px;
@@ -57,6 +56,10 @@ main {
 .developer {
   margin-right: 10px;
 }
+.contactlink {
+  display: flex;
+  align-items: center;
+}
 .developer,
 .stortnamn,
 .frontend,
@@ -68,7 +71,9 @@ h2 {
 .stortnamn:hover,
 .frontend:hover,
 .developer:hover,
-h2:hover {
+h2:hover,
+#githubicon:hover,
+#mail_icon:hover {
   color: #488555;
 }
 .about_box > p {
@@ -113,6 +118,8 @@ form {
   display: flex;
   width: 50%;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .photo-container {
   width: 100%;
@@ -154,7 +161,13 @@ label {
   width: 50%;
   height: 30px;
   border-radius: 20px;
-  z-index: -10px;
+  margin-left: 50px;
+  color: #c1bac4;
+  padding-left: 40px;
+  padding-top: 5px;
+}
+.form_container {
+  margin-bottom: 60px;
 }
 
 .purplesection {
@@ -162,6 +175,7 @@ label {
   background-color: #966fa9;
   width: 100%;
   justify-content: center;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -185,6 +199,9 @@ label {
     display: inline;
     padding: 40px;
   }
+  ul {
+    padding: 32px;
+  }
   main {
     background-color: #454745;
     width: 80%;
@@ -192,8 +209,8 @@ label {
   }
 
   .stortnamn {
-    margin-left: 0;
     font-size: 100px;
+    margin-bottom: -40px;
   }
 
   .frontend {
@@ -209,7 +226,7 @@ label {
   }
 
   .photo {
-    width: 50%;
+    width: 40%;
   }
   .aboutcontainer {
     display: flex;
@@ -218,7 +235,7 @@ label {
     flex-direction: column;
   }
   .about_box {
-    width: 60%;
+    width: 500px;
   }
 
   h2 {
@@ -240,5 +257,9 @@ label {
   }
   #phone_footer {
     color: #966fa9;
+  }
+  .btn {
+    width: 20%;
+    text-decoration: none;
   }
 }

@@ -29,15 +29,19 @@
         </nav>
       </header>
     </section>
-    <section class="mainsection">
+    <div class="mainsection">
       <main>
         <span class="stortnamn">MIRA VITSAS</span>
         <section class="content-container">
-          <wrapper class="photo-container">
-            <img class="photo" src="photos/cv_bild copy.png" />
-          </wrapper>
-          <a href="#contact"
-            ><button type="button" class="btn">CONTACT</button></a
+          <article class="photo-container">
+            <img
+              class="photo"
+              src="photos/cv_bild_copy.png"
+              alt="photo of me"
+            />
+          </article>
+          <a href="#contact" class="btn btn-success btn-lg active" role="button"
+            >Contact</a
           >
         </section>
         <section class="frontend-container">
@@ -53,10 +57,10 @@
         <article class="aboutcontainer">
           <h2 id="about">ABOUT</h2>
           <section class="about_box">
-            <p>Namn: Mira Vitsas</p>
-            <p>Ålder: 25</p>
-            <p>Utbildning: Front end- developer, Medieinstitutet</p>
-            <p>Intressen: Kodning, Design, Musik och Konst</p>
+            <p>Name: Mira Vitsas</p>
+            <p>Age: 25</p>
+            <p>Education: Front end- developer, Medieinstitutet</p>
+            <p>Hobbies: Design, Coding, Art & Music</p>
           </section>
           <a id="githubicon" href="https://github.com/miravit">
             <svg
@@ -97,7 +101,7 @@
         <article class="projekt">här ska jag ha mina projekt</article>
         <h2 id="contact">CONTACT</h2>
         <article class="form_container">
-          <content class="form">
+          <section class="form">
             <form>
               <label>Name:</label>
               <input type="text" />
@@ -116,12 +120,12 @@
 
               <button type="submit" class="form_button">Send</button>
             </form>
-          </content>
+          </section>
         </article>
       </main>
       <footer class="purplesection">
         <p id="phone_footer">+(46) 708188233</p>
       </footer>
-    </section>
+    </div>
   </body>
 </html>
