@@ -184,8 +184,13 @@ label {
 p {
   color: white;
 }
+.projectcontainer {
+}
+
+.gitlistul {
+  display: inline;
+}
 .gitlist {
-  display: block;
   color: white;
 }
 
@@ -259,6 +264,10 @@ p {
 
   .textbox {
     height: 80px;
+  }
+
+  .gitlistul {
+    display: flex;
   }
 
   .purplesection {
