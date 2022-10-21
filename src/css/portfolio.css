@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+.headersection {
+  display: flex;
+}
+.header {
+  background-color: #c1bac4;
+  width: 100vw;
+  height: 10vh;
+  flex-direction: row;
+}
+li {
+  list-style-type: none;
+  padding-top: 6px;
+}
+ul {
+  padding: 4px;
+  margin-top: -5px;
+}
+.menulinks {
+  font-size: 14px;
+  text-decoration: none;
+  color: #454745;
+}
+
+.navbar {
+  display: flex;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  background-color: #454745;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.stortnamn {
+  font-size: 60px;
+  display: inline;
+  width: 76%;
+  margin-left: 24%;
+}
+
+.frontend {
+  margin-left: -90px;
+}
+.developer {
+  margin-right: 10px;
+}
+.contactlink {
+  display: flex;
+  align-items: center;
+}
+.developer,
+.stortnamn,
+.frontend,
+h2 {
+  font-family: "Koulen", cursive;
+  color: #c1bac4;
+  animation: namn_animation 5s;
+}
+.stortnamn:hover,
+.frontend:hover,
+.developer:hover,
+h2:hover,
+#githubicon:hover,
+#mail_icon:hover {
+  color: #488555;
+}
+.about_box > p {
+  margin: 3%;
+  padding: 3%;
+}
+#githubicon,
+#mail_icon {
+  color: black;
+  margin-left: 10px;
+}
+
+.form_container {
+  width: 85%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes namn_animation {
+  0% {
+    color: #c1bac4;
+  }
+  50% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: #488555;
+  }
+}
+
+.frontend {
+  font-size: 40px;
+}
+.developer {
+  display: block;
+  margin-left: -15px;
+  font-size: 40px;
+  margin-top: -40px;
+}
+
+.content-container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.photo-container {
+  width: 100%;
+}
+
+.photo {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main > p {
+  padding: 5%;
+}
+
+h2 {
+  text-align: center;
+}
+.about_box {
+  background-color: black;
+  color: white;
+  margin: 5%;
+}
+.projekt {
+  height: 600px; /*tillfällig utfyllnad, ska bort*/
+}
+.textbox {
+  height: 80px;
+  margin-bottom: 10px;
+}
+label {
+  color: #c1bac4;
+}
+.form_button {
+  width: 60px;
+  margin: 10px;
+}
+.btn {
+  background-color: #488555;
+  width: 50%;
+  height: 30px;
+  border-radius: 20px;
+  margin-left: 50px;
+  color: #c1bac4;
+  padding-left: 40px;
+  padding-top: 5px;
+}
+.form_container {
+  margin-bottom: 60px;
+}
+
+.purplesection {
+  display: flex;
+  background-color: #966fa9;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  /*desktop*/
+  .mainsection {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header {
+    background-color: #c1bac4;
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    display: inline;
+    padding: 40px;
+  }
+  ul {
+    padding: 32px;
+  }
+  main {
+    background-color: #454745;
+    width: 80%;
+    order: 2;
+  }
+
+  .stortnamn {
+    font-size: 100px;
+    margin-bottom: -40px;
+  }
+
+  .frontend {
+    margin-left: -100px;
+  }
+  .developer {
+    margin-left: 70px;
+    margin-top: -70px;
+  }
+  .frontend,
+  .developer {
+    font-size: 80px;
+  }
+
+  .photo {
+    width: 40%;
+  }
+  .aboutcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about_box {
+    width: 500px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  .form_container {
+    width: 65%;
+  }
+
+  .textbox {
+    height: 80px;
+  }
+
+  .purplesection {
+    background-color: #966fa9;
+    order: 1;
+    width: 20%;
+  }
+  #phone_footer {
+    color: #966fa9;
+  }
+  .btn {
+    width: 20%;
+    text-decoration: none;
+  }
+}
