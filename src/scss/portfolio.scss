@@ -147,7 +147,10 @@ h2 {
   margin: 5%;
 }
 .projekt {
-  height: 600px; /*tillfällig utfyllnad, ska bort*/
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  padding-left: 55px;
 }
 .textbox {
   height: 80px;
@@ -184,14 +187,14 @@ label {
 p {
   color: white;
 }
-.projectcontainer {
-}
 
 .gitlistul {
-  display: inline;
+  display: flex;
+  flex-direction: column;
 }
 .gitlist {
   color: white;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -210,11 +213,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    li {
+      display: inline;
+      padding: 40px;
+    }
   }
-  li {
-    display: inline;
-    padding: 40px;
-  }
+
   ul {
     padding: 32px;
   }
